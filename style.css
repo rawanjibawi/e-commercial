@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing:  border-box;
+    text-decoration: none;
+    list-style-type: none;
+}
+header{
+    border: 1px solid black;
+    display: flex;
+    justify-content: flex-end;/*Will push left and right item to the far edges, and item in the middle is gonna space between those two*/
+    align-items: center;
+    padding: 20px 5%;/*we change padding left and right*/
+    background-color: #362901;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    height: 60px;
+}
+.txt{
+    margin-right: auto;
+}
+li a, .dropdown-content a{
+    position: relative;
+    display: inline;
+    color:#cfd4df;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 36px;
+    margin-right: 20px;
+    padding-right: 21px;
+    border-right: 3px solid #991466;
+}
+.dropdown-content a{
+    color: black;
+    border-right: none;
+    font-weight: 500px;
+    font-family: 'Roboto', sans-serif;
+    
+}
+.dropdown-content a:hover{
+    color: #991466;
+}
+.dropdown a{
+    border-right: none;
+
+}
+header li{
+    display: inline;
+}
+li a:hover{
+    color: #e933a3;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 12px 16px;
+    z-index: 1;
+  }
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
