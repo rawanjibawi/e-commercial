@@ -6,6 +6,7 @@
     text-decoration: none;
     list-style-type: none;
 }
+/*header section*/
 header{
     border: 1px solid black;
     display: flex;
@@ -67,3 +68,5 @@ li a:hover{
   .dropdown:hover .dropdown-content {
     display: block;
   }
+
+/*navigation section*/
